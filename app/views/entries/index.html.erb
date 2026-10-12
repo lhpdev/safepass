@@ -1,0 +1,13 @@
+
+<div class="row">
+  <div id="dashboard" class="card shadow-sm">
+    <div class="entries-card">
+      <div class="entries-card__sidebar">
+        <%= render(@entries) %>
+      </div>
+      <div class="entries-card__main">
+        <%= @entries&.first&.name %>
+      </div>
+    </div>
+  </div>
+</div>
