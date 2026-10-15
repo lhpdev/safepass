@@ -4,6 +4,7 @@ class EntriesController < ApplicationController
 
   def index
     @entries = current_user.entries.order(created_at: :desc)
+    @main_entry = current_user.entries.first
   end
 
   def show
